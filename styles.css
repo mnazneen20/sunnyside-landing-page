@@ -236,7 +236,7 @@ button > span{
 /* footer styles */
 footer{
     text-align: center;
-    background-color: hsla(168, 34%, 41%, 0.6);
+    background-color: #85d6c5;
     color: #458c7e;
     font-weight: 600;
 }
