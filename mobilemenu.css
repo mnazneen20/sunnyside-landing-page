@@ -1,0 +1,92 @@
+
+.hamburger{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: none;
+}
+.hamburger span{
+    display: block;
+    height: 3px;
+    width: 40px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+.hamburger .span1{
+    transform: translate(-50%, -50%) translateY(-10px);
+}
+.hamburger .span4{
+    transform: translate(-50%, -50%) translateY(10px);
+}
+.hamburger.open .span2{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.hamburger.open .span3{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.hamburger.open .span1{
+    transform: translate(-50%, -50%) translateY(-20px);
+    background-color: transparent;
+}
+.hamburger.open .span4{
+    transform: translate(-50%, -50%) translateY(20px);
+    background-color: transparent;
+}
+.mobilemenu-div{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 3;
+    display: none;
+}
+
+@media screen and (max-width:850px) {
+    .hamburger{
+        display: block;
+    }
+    
+    .mobilemenu{
+        position: relative;
+        background-color: #fff;
+        padding: 40px 0;
+        list-style-type: none;
+        color: gray;
+    }
+    .triangle{
+        position: absolute;
+        top: -29px;
+        right: 0;
+        height: 30px;
+        width: 30px;
+        background-color: transparent;
+    
+    
+        border-width: 20px;
+        border-style: solid;
+    
+        border-top-color: transparent;
+        border-right-color: white;
+        border-bottom-color: white;
+        border-left-color: transparent;
+    }
+    
+    .mobilemenu .contact-btn{
+        color: black;
+        background-color: hsl(51, 100%, 49%);
+        display: inline-block;
+        margin: 20px 0 10px;
+        padding: 0 40px;
+    }
+    .show{
+        display: block;
+    }
+}
